@@ -6,6 +6,13 @@
 
   <title>Dino Logic Games</title>
 
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
   <style>
     * {
       margin: 0;
@@ -15,8 +22,8 @@
 
     body {
       width: 100%;
-      height: 100vh;
-      background: white;
+      min-height: 100vh;
+      background: #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -27,21 +34,24 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       text-align: center;
+      padding: 20px;
     }
 
     .logo {
-      width: 256px;
-      height: 256px;
+      width: 512px;
+      height: 512px;
       object-fit: contain;
-      margin-bottom: 24px;
+      margin-bottom: 32px;
     }
 
     .title {
       font-size: 52px;
       font-weight: 700;
       letter-spacing: 6px;
-      color: #111;
+      color: #111111;
+      user-select: none;
     }
 
     .logic {
@@ -50,8 +60,8 @@
 
     @media (max-width: 768px) {
       .logo {
-        width: 180px;
-        height: 180px;
+        width: 240px;
+        height: 240px;
       }
 
       .title {
@@ -65,7 +75,11 @@
 <body>
 
   <div class="container">
-    <img src="logo.png" alt="Dino Logic Games Logo" class="logo">
+    <img
+      src="logo.png"
+      alt="Dino Logic Games Logo"
+      class="logo"
+    >
 
     <div class="title">
       DINO <span class="logic">LOGIC</span> GAMES
